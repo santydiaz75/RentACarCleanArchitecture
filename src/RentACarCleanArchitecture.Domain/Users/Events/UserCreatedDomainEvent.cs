@@ -1,0 +1,5 @@
+using RentACarCleanArchitecture.Domain.Abstractions;
+
+namespace RentACarCleanArchitecture.Domain.Users.Events;
+
+public sealed record UserCreatedDomainEvent(UserId UserId) : IDomainEvent;

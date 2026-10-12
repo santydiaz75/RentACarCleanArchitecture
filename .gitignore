@@ -1,0 +1,112 @@
+## Build results
+[Dd]ebug/
+[Rr]elease/
+[xX]64/
+[xX]86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## .NET artifacts
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb
+*.svclog
+*.snupkg
+*.nupkg
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Test results
+[Tt]est[Rr]esult*/
+[Bb]enchmark[Dd]ot[Nn]et.Artifacts/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+## NuGet
+*.nupkg
+*.nuget.props
+*.nuget.targets
+packages/
+!packages/build/
+!.nuget/packages/
+
+## ASP.NET / web
+wwwroot/lib/
+
+## Publish output
+publish/
+app.publish/
+
+## Visual Studio
+.vs/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Logs
+*.log
+
+## Local environment files
+.env
+.env.*
+
+## Docker
+**/.docker/
+.containers/database/
+
+## Azure / deployment tools
+.azure/
+
+## Temporary files
+*.tmp
+*.temp
+~$*
+*~
+
+## Generated files
+Generated/
+
+## Entity Framework migrations bundle (if generated)
+efbundle
+
+## Node (if frontend is added later)
+node_modules/
+
+## Yarn/Pnpm/NPM logs
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+pnpm-debug.log*
+/.containers

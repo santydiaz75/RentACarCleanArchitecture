@@ -1,0 +1,33 @@
+services:
+  rentacarcleanarchitecturedb:
+    container_name: rentacarcleanarchitecturedb
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=sametsis
+      - POSTGRES_DB=rentacarcleanarchitecturedb
+    restart: always
+    volumes:
+      - ./.containers/database:/var/lib/postgresql/data/
+    ports:
+      - 5432:5432
+
+  rentacarcleanarchitectureapi:
+    container_name: rentacarcleanarchitectureapi
+    restart: unless-stopped
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Test
+      - ASPNETCORE_URLS=http://+:5000
+      - Serilog__WriteTo__1__Args__serverUrl=http://serilogseq:5341
+      - "ConnectionStrings__Database=Host=rentacarcleanarchitecturedb;Port=5432;Database=rentacarcleanarchitecturedb;Username=admin;Password=sametsis;"
+    depends_on:
+      - rentacarcleanarchitecturedb
+    ports:
+      - 80:5000
+  serilogseq:
+    container_name: serilogseq
+    environment:
+      - ACCEPT_EULA=Y
+      - SEQ_FIRSTRUN_NOAUTHENTICATION=true
+    ports:
+      - 5341:5341
+      - 8081:80

@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RentACarCleanArchitecture.Api/RentACarCleanArchitecture.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/RentACarCleanArchitecture.Domain/">
+    <Project Path="src/RentACarCleanArchitecture.Domain/RentACarCleanArchitecture.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/RentACarCleanArchitecture.Application/">
+    <Project Path="src/RentACarCleanArchitecture.Application/RentACarCleanArchitecture.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/RentACarCleanArchitecture.Infrastructure/">
+    <Project Path="src/RentACarCleanArchitecture.Infrastructure/RentACarCleanArchitecture.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/RentACarCleanArchitecture.Api.FunctionalTests/RentACarCleanArchitecture.Api.FunctionalTests.csproj" />
+    <Project Path="test/RentACarCleanArchitecture.Application.IntegrationTests/RentACarCleanArchitecture.Application.IntegrationTests.csproj" />
+    <Project Path="test/RentACarCleanArchitecture.Application.UnitTests/RentACarCleanArchitecture.Application.UnitTests.csproj" />
+    <Project Path="test/RentACarCleanArchitecture.ArchitectureTests/RentACarCleanArchitecture.ArchitectureTests.csproj" />
+    <Project Path="test/RentACarCleanArchitecture.Domain.UnitTests/RentACarCleanArchitecture.Domain.UnitTests.csproj" />
+  </Folder>
+</Solution>
