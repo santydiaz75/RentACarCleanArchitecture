@@ -60,7 +60,7 @@ RentACarCleanArchitecture/
 | **Logging** | Serilog + Seq |
 | **API Versioning** | Asp.Versioning 10.2.1 |
 | **API Documentation** | Swagger/Swashbuckle 10.0 |
-| **Testing** | xUnit, FluentAssertions |
+| **Testing** | xUnit, FluentAssertions, Testcontainers  |
 | **Docker** | Containerización |
 
 ## 🚀 Guía de Inicio
